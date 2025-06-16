@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Participantes</title>
+  <link rel="stylesheet" href="CSS/Participantes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script defer src="JS/Participantes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+
+  <header>
+    <img src="imagens/Logo.png" alt="Logo" class="logo">
+    <h1>Participantes Cadastrados</h1>
+  </header>
+  <button class="sair", onclick="window.location.href='Tela_inicial.html'"><i class="fas fa-arrow-left"></i></button>
+  <main>
+  <section class="filtro-busca">
+    <label for="campo-filtro">Buscar por:</label>
+    <select id="campo-filtro" class="campo-filtro">
+      <option value="nome">Nome</option>
+      <option value="escola">Escola</option>
+      <option value="matricula">Matrícula</option>
+    </select>
+
+    <button id="btn-buscar" aria-label="Buscar">
+      <i class="fas fa-search"></i></button>
+  </section>
+    <section class="tabela-participantes">
+      <h2>Lista de Participantes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Escola</th>
+            <th>Matrícula</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-participantes">
+          <!-- Linhas serão inseridas dinamicamente via JavaScript -->
+        </tbody>
+      </table>
+    </section>
+
+    <div class="navegacao">
+      
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
